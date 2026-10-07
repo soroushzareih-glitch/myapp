@@ -13,7 +13,7 @@ jobs:
           distribution: temurin
           java-version: 17
       - run: mkdir -p www
-      - run: if [ -f index.html ]; then cp index.html www/index.html; fi
+      - run: cp index-5.html www/index.html
       - run: npm install
       - run: npx cap add android
       - run: npx cap sync android
